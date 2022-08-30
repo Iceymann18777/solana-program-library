@@ -68,6 +68,12 @@ name = "arbitrary"
 version = "0.4.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "db55d72333851e17d572bec876e390cd3b11eb1ef53ae821dd9f3b653d2b4569"
+
+[[package]]
+name = "arbitrary"
+version = "1.1.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8931eb436ab9bf1980c6cb2b9d1ba5390cd6793b2c6e2d2ea8147da3570c2a2e"
 dependencies = [
  "derive_arbitrary",
 ]
@@ -764,9 +770,9 @@ dependencies = [
 
 [[package]]
 name = "derive_arbitrary"
-version = "0.4.7"
+version = "1.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b1a012b5e473dc912f0db0546a1c9c6a194ce8494feb66fa0237160926f9e0e6"
+checksum = "d749b611838b7e92cba33b8552187059f2dc32f91d4d66bdc4fe5da9526b4e07"
 dependencies = [
  "proc-macro2 1.0.26",
  "quote 1.0.9",
@@ -1355,7 +1361,7 @@ version = "0.5.52"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ead88897bcad1c396806d6ccba260a0363e11da997472e9e19ab9889969083a2"
 dependencies = [
- "arbitrary",
+ "arbitrary 0.4.7",
  "lazy_static",
  "memmap",
 ]
@@ -3673,7 +3679,7 @@ dependencies = [
 name = "spl-binary-oracle-pair"
 version = "0.1.0"
 dependencies = [
- "arbitrary",
+ "arbitrary 1.1.4",
  "borsh",
  "num-derive",
  "num-traits",
@@ -3982,7 +3988,7 @@ dependencies = [
 name = "spl-token-swap"
 version = "2.1.0"
 dependencies = [
- "arbitrary",
+ "arbitrary 1.1.4",
  "arrayref",
  "enum_dispatch",
  "num-derive",
@@ -4001,7 +4007,7 @@ dependencies = [
 name = "spl-token-swap-fuzz"
 version = "0.0.1"
 dependencies = [
- "arbitrary",
+ "arbitrary 1.1.4",
  "honggfuzz",
  "solana-program",
  "spl-math",
